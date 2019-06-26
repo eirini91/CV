@@ -1,0 +1,270 @@
+{
+    "jobs":[{
+        "title": "Senior Mobile Developer",
+        "company": "PKF Cooper Parry Sync Interactive",
+        "address": "Birmingham, UK",
+        "dates": "08/2018 t To Date",
+        "description": "Mobile App Agency",
+        "responsibilities": [
+            {
+                "title": "Developing new apps",
+                "description": "Developed a number of apps from scratch for the company's customers"
+            }, 
+            {
+                "title": "Maintaining new apps",
+                "description": "Maintained all existing apps while providing support and adding new features."
+            }, 
+            {
+                "title": "Training junior developers",
+                "description": "Train junior developer using weekly study groups created and lead by me."
+            }, 
+            {
+                "title": "Designing Architecture of new Projects",
+                "description": "Designed the architecture of the backend systems of a number of applications."
+            }, 
+            {
+                "title": "Writing Documentation",
+                "description": "Documented specs and testing for multiple projects as needed by the customers."
+            }
+        ],
+        "examples": [
+            {
+                "title": "Employee App",
+                "description": "Created internal project for use by the company’s employees. App included: Suggestion board where users could suggest and like ideas, How is it going section where users got a weekly notification to remind them to anonymously say how they are feeling this week and more.",
+                "link":"N/A",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Customer Ticketing App",
+                "description": "Converted our current Connectwise ticketing system into an app which our customer could use to contact our support lines.",
+                "link":"N/A",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Cheltenham Horse Racing App",
+                "description": "Developed the app for a customer from scratch",
+                "link":"https://play.google.com/store/apps/details?id=uk.co.prioritysms.CheltenhamRacecourse",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Fit for future Greggs App",
+                "description": "Developed the app for a customer from scratch",
+                "link":"https://play.google.com/store/apps/details?id=uk.co.prioritysms.greggs.",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Rate my game",
+                "description": "Developed the app for a customer from scratch. The app is a rating tool for young footballers and their coaches",
+                "link":"http://bit.ly/android-rmg",
+                "screenshots":[{
+                    "name":""
+                }]
+            }
+        ]
+    },
+    {
+        "title": "Senior Android Developer",
+        "company": "Castleton Technologies PLC",
+        "address": "Birmingham, UK",
+        "dates": "05/2017 to 08/2018",
+        "description": "The company focuses on software for Social Housing companies",
+        "responsibilities": [
+            {
+                "title": "Developing new apps",
+                "description": "Developed a number of apps from scratch for the company"
+            }, 
+            {
+                "title": "Maintaining new apps",
+                "description": "Maintained all existing apps while providing support and adding new features."
+            },  
+            {
+                "title": "Writing Documentation",
+                "description": "Documented specs and testing for multiple projects as needed by the customers."
+            }
+        ],
+        "examples": [
+            {
+                "title": "EDRM",
+                "description": "Developed an EDRM systemn app plugin of the existing desktop EDRM system the company offers.",
+                "link":"N/A",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Dynamicly Created App",
+                "description": "Developed an app which was dynamicly generated using a JSON. Including all activities, UI elements, Actions and Network calls",
+                "link":"N/A",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Whitelabel house management app",
+                "description": "Created and maintained a white label app the company was reselling to its customers. ",
+                "link":"N/A",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Multitentant Customer App",
+                "description": "Created a multi tenant app where all customers based on their login details would see different styles in the app and different sections enabled/disabled",
+                "link":"N/A",
+                "screenshots":[{
+                    "name":""
+                }]
+            }
+        ]
+    },
+    {
+        "title": "Android Developer",
+        "company": "Sync Interactive",
+        "address": "Birmingham, UK",
+        "dates": "08/2015 to 05/2017",
+        "description": "Mobile App Agency",
+        "responsibilities": [
+            {
+                "title": "Developing new apps",
+                "description": "Developed a number of apps from scratch for the company's customers"
+            }, 
+            {
+                "title": "Maintaining new apps",
+                "description": "Maintained all existing apps while providing support and adding new features."
+            }
+        ],
+        "examples": [
+            {
+                "title": "RAG Contacts",
+                "description": "Emergency Calling App",
+                "link":"https://play.google.com/store/apps/details?id=uk.co.ragcontacts.ragcontacts",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "NHS Walsall Diabetes",
+                "description": "Diabetes informational App",
+                "link":"https://play.google.com/store/apps/details?id=uk.nhs.walsallhealthcare.walsalldiabetes.",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Activity Hunter",
+                "description": "UK Based app to find activies to do",
+                "link":"https://play.google.com/store/apps/details?id=uk.co.activityhunter.activityhunter.",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Talking Motors",
+                "description": "Car selling app with an integrated chat system",
+                "link":"https://play.google.com/store/apps/details?id=com.talkingmotorsapp.talkingmotors",
+                "screenshots":[{
+                    "name":""
+                }]
+            }
+        ]
+    },
+    {
+        "title": "Android Developer",
+        "company": "The Genuine Gemstone Company",
+        "address": "Reditch, UK",
+        "dates": "02/2014 to 08/2015",
+        "description": "Gemstone and jewellery selling TV channels",
+        "responsibilities": [
+            {
+                "title": "Developing new apps",
+                "description": "Developed a number of apps from scratch for the company's customers"
+            }, 
+            {
+                "title": "Maintaining new apps",
+                "description": "Maintained all existing apps while providing support and adding new features."
+            }, 
+            {
+                "title": "Maintaining iOS apps",
+                "description": "Maintained all existing apps while providing support and adding new features."
+            }
+        ],
+        "examples": [
+            {
+                "title": "Jewellery Maker App",
+                "description": "App to watch the Jewellery maker channel and buy jewellery making tools",
+                "link":"https://play.google.com/store/apps/details?id=com.jewellerymaker&hl=en_GB",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "GEM TV App",
+                "description": "Allowed users to watch all 4 channels of the company, bet and buy items TV advertised items live and also buy items advertised in the app only.",
+                "link":"https://play.google.com/store/apps/details?id=uk.co.gemtv&hl=en_GB.",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Rign Sizer - iOS, Android, Apple Watch, Android Watch",
+                "description": "Allowed users to measure their ring size",
+                "link":"https://play.google.com/store/apps/details?id=com.gemporia.ringsizer&hl=en_GB.",
+                "screenshots":[{
+                    "name":""
+                }]
+            }
+        ]
+    },
+    {
+        "title": "Personal Projects",
+        "company": "-",
+        "address": "Birmingham, UK",
+        "dates": "-",
+        "description": "Apps that I developed on my free time",
+        "responsibilities": null,
+        "examples": [
+            {
+                "title": "Pes to me NTOU - Greek",
+                "description": "Friends huming songs game in Greek",
+                "link":"https://play.google.com/store/apps/details?id=com.televantou.ntou.",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Pantomina - Charades",
+                "description": "Friends charade game in Greek",
+                "link":"https://play.google.com/store/apps/details?id=com.televantou.pantomima.",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Cyprus Doctors",
+                "description": "Doctor directory for Cyprus with the ability to add reviews for doctors.",
+                "link":"https://play.google.com/store/apps/details?id=com.eirinitelevantou.drcy.",
+                "screenshots":[{
+                    "name":""
+                }]
+            },
+            {
+                "title": "Freelance Timer",
+                "description": "An app that allows freelancers to manage and time their work.",
+                "link":"https://play.google.com/store/apps/details?id=com.televantou.myapplication.",
+                "screenshots":[{
+                    "name":""
+                }]
+            }
+        ]
+    }
+
+    ]
+}

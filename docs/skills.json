@@ -1,0 +1,112 @@
+{
+    "skills":[{
+        "name": "Android Development",
+        "level": "Excelent",
+        "items": [
+            {
+                "name":"Java",
+                "level": "Excelent"
+            },{
+                "name":"Kotlin",
+                "level": "Basic"
+            },{
+                "name":"RXJava",
+                "level": "Very Good"
+            },{
+                "name":"MVP Architecture",
+                "level": "Excelent"
+            },{
+                "name":"MVVM Architecture",
+                "level": "Good"
+            },{
+                "name":"Dagger2",
+                "level": "Good"
+            },{
+                "name":"Unit Testing",
+                "level": "Good"
+            },{
+                "name":"Retrofit",
+                "level": "Excelent"
+            }]
+    },{
+        "name": "iOS Development",
+        "level": "Bacic",
+        "items": [
+            {
+                "name":"ObjC",
+                "level": "Basic"
+            },{
+                "name":"Swift",
+                "level": "Basic"}
+            ]
+    },{
+        "name": "CI",
+        "level": "Good",
+        "items": [
+            {
+                "name":"Jenkins",
+                "level": "Good"
+            }
+        ]
+    },{
+        "name": "Project Management",
+        "level": "Excelent",
+        "items": [
+            {
+                "name":"Jira",
+                "level": "Excelent"
+            },{
+                "name": "Trello",
+                "level": "Excelent"
+            },{
+                "name": "Azure DevOps",
+                "level": "Excelent"
+            }
+        ]
+    },{
+        "name": "Development Methodologies",
+        "level": "Very Good",
+        "items": [
+            {
+                "name":"Agile Scrum",
+                "level": "Excelent"
+            }
+        ]
+    },
+    {
+        "name": "Markup",
+        "level": "Excelent",
+        "items": [
+            {
+                "name":"JSON",
+                "level": "Excelent"
+            },
+            {
+                "name":"XML",
+                "level": "Excelent"
+            }
+        ]
+    },
+    {
+        "name": "Web Development",
+        "level": "Basic",
+        "items": [
+            {
+                "name":".net Core",
+                "level": "Basic"
+            },
+            {
+                "name":"C#",
+                "level": "Basic"
+            },
+            {
+                "name":"HTML",
+                "level": "Very Good"
+            },
+            {
+                "name":"Azure Api hosting and SQL",
+                "level": "Basic"
+            }
+        ]
+    }]
+}
