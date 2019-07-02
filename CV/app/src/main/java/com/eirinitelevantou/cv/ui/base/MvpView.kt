@@ -15,8 +15,6 @@ interface MvpView {
 
     fun hideLoading()
 
-    fun openActivityOnTokenExpire()
-
     fun onError(@StringRes resId: Int)
 
     fun onError(message: String)

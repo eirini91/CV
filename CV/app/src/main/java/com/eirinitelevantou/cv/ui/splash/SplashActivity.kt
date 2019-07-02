@@ -11,9 +11,6 @@ import javax.inject.Inject
 
 
 class SplashActivity : BaseActivity(), SplashMvpView {
-    override fun openActivityOnTokenExpire() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
 
 
 
@@ -48,10 +45,4 @@ class SplashActivity : BaseActivity(), SplashMvpView {
 
     }
 
-    companion object {
-
-        fun getStartIntent(context: Context): Intent {
-            return Intent(context, SplashActivity::class.java)
-        }
-    }
 }

@@ -27,12 +27,6 @@ import javax.inject.Inject
 
 class MainActivity : BaseActivity(), MainMvpView {
 
-
-    override fun openActivityOnTokenExpire() {
-
-    }
-
-
     var mPresenter: MainMvpPresenter<MainMvpView>? = null
         @Inject set
 

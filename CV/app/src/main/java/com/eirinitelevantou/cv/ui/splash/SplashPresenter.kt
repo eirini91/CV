@@ -1,11 +1,11 @@
 package com.eirinitelevantou.cv.ui.splash
 
+import android.os.Handler
 import com.eirinitelevantou.cv.ui.base.BasePresenter
 import com.eirinitelevantou.cv.utils.rx.SchedulerProvider
 import io.reactivex.ObservableSource
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.functions.Consumer
-import io.reactivex.functions.Function
+
 
 import javax.inject.Inject
 
@@ -19,7 +19,11 @@ constructor(
     override fun onAttach(mvpView: V) {
         super.onAttach(mvpView)
 
-        getMvpView()!!.openMainActivity()
+
+        Handler().postDelayed({
+            getMvpView()!!.openMainActivity()
+        }, 3000)
+
 
     }
 
