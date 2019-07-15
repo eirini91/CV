@@ -88,12 +88,6 @@ abstract class BaseDialog : DialogFragment(), DialogMvpView {
         }
     }
 
-    override fun openActivityOnTokenExpire() {
-        if (baseActivity != null) {
-            baseActivity!!.openActivityOnTokenExpire()
-        }
-    }
-
 
     protected abstract fun setUp(view: View)
 

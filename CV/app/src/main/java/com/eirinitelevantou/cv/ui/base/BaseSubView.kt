@@ -76,12 +76,6 @@ abstract class BaseSubView : ViewGroup, SubMvpView {
         }
     }
 
-    override fun openActivityOnTokenExpire() {
-        if (mParentMvpView != null) {
-            mParentMvpView!!.openActivityOnTokenExpire()
-        }
-    }
-
     protected abstract fun bindViewsAndSetOnClickListeners()
 
     protected abstract fun setUp()

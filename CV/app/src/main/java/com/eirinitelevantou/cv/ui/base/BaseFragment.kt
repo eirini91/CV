@@ -89,13 +89,6 @@ abstract class BaseFragment : Fragment(), MvpView {
         }
     }
 
-    override fun openActivityOnTokenExpire() {
-        if (baseActivity != null) {
-            baseActivity!!.openActivityOnTokenExpire()
-        }
-    }
-
-
     protected abstract fun setUp(view: View)
 
 

@@ -27,12 +27,6 @@ import javax.inject.Inject
 
 class MainActivity : BaseActivity(), MainMvpView {
 
-
-    override fun openActivityOnTokenExpire() {
-
-    }
-
-
     var mPresenter: MainMvpPresenter<MainMvpView>? = null
         @Inject set
 
@@ -144,20 +138,17 @@ class MainActivity : BaseActivity(), MainMvpView {
             R.string.close_drawer
         ) {
             override fun onDrawerOpened(drawerView: View) {
-                if (drawerView != null) {
                     super.onDrawerOpened(drawerView)
-                }
                 hideKeyboard()
             }
 
             override fun onDrawerClosed(drawerView: View) {
-                if (drawerView != null) {
                     super.onDrawerClosed(drawerView)
-                }
+
             }
         }
         drawer_view!!.addDrawerListener(mDrawerToggle!!)
-        mDrawerToggle!!.syncState()
+        mDrawerToggle.syncState()
         setupNavMenu()
         mPresenter!!.onNavMenuCreated()
         setupCardContainerView()
