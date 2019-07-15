@@ -1,39 +1,35 @@
 package com.eirinitelevantou.cv
 
+import android.app.Activity
 import android.app.Application
-import com.androidnetworking.AndroidNetworking
-import com.androidnetworking.interceptors.HttpLoggingInterceptor
-import com.eirinitelevantou.cv.di.component.ApplicationComponent
-import com.eirinitelevantou.cv.di.component.DaggerApplicationComponent
-import com.eirinitelevantou.cv.di.module.ApplicationModule
+import com.eirinitelevantou.cv.di.component.DaggerAppComponent
+import dagger.android.DispatchingAndroidInjector
+import dagger.android.HasActivityInjector
+import io.realm.Realm
+import io.realm.RealmConfiguration
+import javax.inject.Inject
 
-class CVApp : Application() {
+class CVApp : Application(), HasActivityInjector {
 
+    var activityDispatchingAndroidInjector: DispatchingAndroidInjector<Activity>? = null
+        @Inject set
 
-    private var mApplicationComponent: ApplicationComponent? = null
+    override fun activityInjector(): DispatchingAndroidInjector<Activity>? {
+        return activityDispatchingAndroidInjector
+    }
 
     override fun onCreate() {
         super.onCreate()
-
-        mApplicationComponent = DaggerApplicationComponent.builder()
-            .applicationModule(ApplicationModule(this)).build()
-
-        mApplicationComponent!!.inject(this)
-
-        AndroidNetworking.initialize(applicationContext)
-        if (BuildConfig.DEBUG) {
-            AndroidNetworking.enableLogging(HttpLoggingInterceptor.Level.BODY)
-        }
-
-    }
-
-    fun getComponent(): ApplicationComponent? {
-        return mApplicationComponent
-    }
+        Realm.init(this)
+        val config = RealmConfiguration.Builder()
+            .deleteRealmIfMigrationNeeded()
+            .build()
+        Realm.setDefaultConfiguration(config)
+        DaggerAppComponent.builder()
+            .application(this)
+            .build()
+            .inject(this)
 
 
-    // Needed to replace the component with a test specific one
-    fun setComponent(applicationComponent: ApplicationComponent) {
-        mApplicationComponent = applicationComponent
     }
 }

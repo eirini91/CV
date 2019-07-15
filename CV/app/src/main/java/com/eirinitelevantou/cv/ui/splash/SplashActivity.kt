@@ -1,54 +1,49 @@
 package com.eirinitelevantou.cv.ui.splash
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import com.eirinitelevantou.cv.BR
 import com.eirinitelevantou.cv.R
+import com.eirinitelevantou.cv.databinding.ActivitySplashBinding
 import com.eirinitelevantou.cv.ui.base.BaseActivity
-import com.eirinitelevantou.cv.ui.main.MainActivity
+import com.eirinitelevantou.cv.utils.Navigator
 
 import javax.inject.Inject
 
 
-class SplashActivity : BaseActivity(), SplashMvpView {
+class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), SplashViewInterface {
 
-
-
-    var mPresenter: SplashMvpPresenter<SplashMvpView>? = null
+    override var viewModel: SplashViewModel? = null
         @Inject set
 
+    var navigator: Navigator? = null
+        @Inject set
+
+    override val bindingVariable: Int
+        get() = BR.viewModel
+
+    override val actionBarTitle: String?
+        get() = null
+
+    override val actionBarType: Int
+        get() = BaseActivity.KEY_NO_ACTION_BAR
+
+    override val layoutId: Int
+        get() = R.layout.activity_splash
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
-
-        activityComponent!!.inject(this)
-
-
-        mPresenter!!.onAttach(this@SplashActivity)
+        viewModel!!.setViewInterface(this, this)
+        val handler = Handler()
+        handler.postDelayed({ viewModel!!.decideNextActivity() }, SPLASH_DISPLAY_LENGTH.toLong())
     }
 
 
     override fun openMainActivity() {
-        val intent = MainActivity.getStartIntent(this@SplashActivity)
-        startActivity(intent)
-        finish()
-    }
-
-
-    override fun onDestroy() {
-        mPresenter!!.onDetach()
-        super.onDestroy()
-    }
-
-    override fun setUp() {
-
+        navigator!!.navigateToMainView(this)
     }
 
     companion object {
-
-        fun getStartIntent(context: Context): Intent {
-            return Intent(context, SplashActivity::class.java)
-        }
+        private val SPLASH_DISPLAY_LENGTH = 3000
     }
 }

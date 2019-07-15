@@ -5,119 +5,59 @@ import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.support.annotation.StringRes
 import android.support.v4.app.DialogFragment
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
-import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.RelativeLayout
-import com.eirinitelevantou.cv.di.component.ActivityComponent
 
+import java.util.Objects
+import java.util.Objects.*
 
-abstract class BaseDialog : DialogFragment(), DialogMvpView {
+abstract class BaseDialog : DialogFragment() {
 
-    var baseActivity: BaseActivity? = null
+    var baseActivity: BaseActivity<*, *>? = null
+        private set
 
-
-    override val isNetworkConnected: Boolean
-        get() = if (baseActivity != null) {
-            baseActivity!!.isNetworkConnected
-        } else false
-
-    val activityComponent: ActivityComponent?
-        get() = if (baseActivity != null) {
-            baseActivity!!.activityComponent
-        } else null
+    val isNetworkConnected: Boolean
+        get() = baseActivity != null && baseActivity!!.isNetworkConnected
 
     override fun onAttach(context: Context?) {
         super.onAttach(context)
-        if (context is BaseActivity) {
-            val mActivity = context as BaseActivity?
+        if (context is BaseActivity<*, *>) {
+            val mActivity = context as BaseActivity<*, *>?
             this.baseActivity = mActivity
             mActivity!!.onFragmentAttached()
         }
     }
 
-    override fun showLoading() {
-        if (baseActivity != null) {
-            baseActivity!!.showLoading()
-        }
-    }
-
-    override fun hideLoading() {
-        if (baseActivity != null) {
-            baseActivity!!.hideLoading()
-        }
-    }
-
-    override fun onError(message: String) {
-        if (baseActivity != null) {
-            baseActivity!!.onError(message)
-        }
-    }
-
-    override fun onError(@StringRes resId: Int) {
-        if (baseActivity != null) {
-            baseActivity!!.onError(resId)
-        }
-    }
-
-    override fun showMessage(message: String) {
-        if (baseActivity != null) {
-            baseActivity!!.showMessage(message)
-        }
-    }
-
-    override fun showMessage(@StringRes resId: Int) {
-        if (baseActivity != null) {
-            baseActivity!!.showMessage(resId)
-        }
-    }
-
-    override fun onDetach() {
-        baseActivity = null
-        super.onDetach()
-    }
-
-    override fun hideKeyboard() {
-        if (baseActivity != null) {
-            baseActivity!!.hideKeyboard()
-        }
-    }
-
-
-    protected abstract fun setUp(view: View)
-
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         // the content
         val root = RelativeLayout(activity)
         root.layoutParams = ViewGroup.LayoutParams(
-            ViewGroup.LayoutParams.MATCH_PARENT,
-            ViewGroup.LayoutParams.WRAP_CONTENT
-        )
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT)
 
-        // creating the fullscreen dialog
-        val dialog = Dialog(context!!)
+        // Creating the fullscreen dialog
+        val dialog = Dialog(requireNonNull(context))
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setContentView(root)
         if (dialog.window != null) {
             dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             dialog.window!!.setLayout(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            )
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT)
         }
         dialog.setCanceledOnTouchOutside(false)
 
         return dialog
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        setUp(view)
+    override fun onDetach() {
+        baseActivity = null
+        super.onDetach()
     }
 
     override fun show(fragmentManager: FragmentManager, tag: String) {
@@ -130,9 +70,26 @@ abstract class BaseDialog : DialogFragment(), DialogMvpView {
         show(transaction, tag)
     }
 
-    override fun dismissDialog(tag: String) {
+    fun dismissDialog(tag: String) {
         dismiss()
         baseActivity!!.onFragmentDetached(tag)
     }
 
+    fun hideKeyboard() {
+        if (baseActivity != null) {
+            baseActivity!!.hideKeyboard()
+        }
+    }
+
+    fun hideLoading() {
+        if (baseActivity != null) {
+            baseActivity!!.hideLoading()
+        }
+    }
+
+    fun showLoading() {
+        if (baseActivity != null) {
+            baseActivity!!.showLoading()
+        }
+    }
 }

@@ -1,81 +1,75 @@
 package com.eirinitelevantou.cv.ui.base
 
-import android.app.ProgressDialog
 import android.content.Context
+import android.databinding.DataBindingUtil
+import android.databinding.ViewDataBinding
 import android.os.Bundle
-import android.support.annotation.StringRes
+import android.support.annotation.LayoutRes
 import android.support.v4.app.Fragment
+import android.view.LayoutInflater
 import android.view.View
-import com.eirinitelevantou.cv.di.component.ActivityComponent
-import com.eirinitelevantou.cv.utils.CommonUtils
+import android.view.ViewGroup
 
-abstract class BaseFragment : Fragment(), MvpView {
+import dagger.android.support.AndroidSupportInjection
 
-    var baseActivity: BaseActivity? = null
-    private var mProgressDialog: ProgressDialog? = null
+/**
+ * Created by Eirini Televantou on 24/09/2018.
+ */
 
-    override val isNetworkConnected: Boolean
-        get() = if (baseActivity != null) {
-            baseActivity!!.isNetworkConnected
-        } else false
+abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>> : Fragment() {
 
-    val activityComponent: ActivityComponent?
-        get() = if (baseActivity != null) {
-            baseActivity!!.activityComponent
-        } else null
+    var baseActivity: BaseActivity<*, *>? = null
+        private set
+    var viewDataBinding: T? = null
+        private set
+    private var viewModel: V? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setHasOptionsMenu(false)
-    }
+    /**
+     * Override for set binding variable
+     *
+     * @return variable id
+     */
+    abstract val bindingVariable: Int
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        setUp(view)
-    }
+    /**
+     * @return layout resource id
+     */
+    @get:LayoutRes
+    abstract val layoutId: Int
+
+    val isNetworkConnected: Boolean
+        get() = baseActivity != null && baseActivity!!.isNetworkConnected
+
+
+    /**
+     * Override for set view model
+     *
+     * @return view model instance
+     */
+    abstract fun getViewModel(): V
+
+    abstract fun setupUi()
+
 
     override fun onAttach(context: Context?) {
         super.onAttach(context)
-        if (context is BaseActivity) {
-            val activity = context as BaseActivity?
+        if (context is BaseActivity<*, *>) {
+            val activity = context as BaseActivity<*, *>?
             this.baseActivity = activity
             activity!!.onFragmentAttached()
         }
     }
 
-    override fun showLoading() {
-        hideLoading()
-        mProgressDialog = this.context?.let { CommonUtils.showLoadingDialog(it) }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        performDependencyInjection()
+        super.onCreate(savedInstanceState)
+        viewModel = getViewModel()
+        setHasOptionsMenu(false)
     }
 
-    override fun hideLoading() {
-        if (mProgressDialog != null && mProgressDialog!!.isShowing) {
-            mProgressDialog!!.cancel()
-        }
-    }
-
-    override fun onError(message: String) {
-        if (baseActivity != null) {
-            baseActivity!!.onError(message)
-        }
-    }
-
-    override fun onError(@StringRes resId: Int) {
-        if (baseActivity != null) {
-            baseActivity!!.onError(resId)
-        }
-    }
-
-    override fun showMessage(message: String) {
-        if (baseActivity != null) {
-            baseActivity!!.showMessage(message)
-        }
-    }
-
-    override fun showMessage(@StringRes resId: Int) {
-        if (baseActivity != null) {
-            baseActivity!!.showMessage(resId)
-        }
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        viewDataBinding = DataBindingUtil.inflate(inflater, layoutId, container, false)
+        return viewDataBinding!!.root
     }
 
     override fun onDetach() {
@@ -83,15 +77,22 @@ abstract class BaseFragment : Fragment(), MvpView {
         super.onDetach()
     }
 
-    override fun hideKeyboard() {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewDataBinding!!.setVariable(bindingVariable, viewModel)
+        viewDataBinding!!.executePendingBindings()
+    }
+
+    fun hideKeyboard() {
         if (baseActivity != null) {
             baseActivity!!.hideKeyboard()
         }
     }
 
 
-    protected abstract fun setUp(view: View)
-
+    private fun performDependencyInjection() {
+        AndroidSupportInjection.inject(this)
+    }
 
     interface Callback {
 

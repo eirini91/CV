@@ -1,15 +1,10 @@
-
-
 package com.eirinitelevantou.cv.di
 
-import javax.inject.Qualifier
 import java.lang.annotation.Retention
 import java.lang.annotation.RetentionPolicy
 
-/**
- * Created by janisharali on 27/01/17.
- */
+import javax.inject.Qualifier
 
 @Qualifier
-@Retention(RetentionPolicy.RUNTIME)
+@kotlin.annotation.Retention(AnnotationRetention.RUNTIME)
 annotation class ApiInfo
