@@ -5,8 +5,7 @@ import com.eirinitelevantou.cv.ui.base.BasePresenter
 import com.eirinitelevantou.cv.utils.rx.SchedulerProvider
 import io.reactivex.ObservableSource
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.functions.Consumer
-import io.reactivex.functions.Function
+
 
 import javax.inject.Inject
 

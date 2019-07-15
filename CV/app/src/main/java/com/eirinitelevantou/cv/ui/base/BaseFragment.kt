@@ -89,6 +89,7 @@ abstract class BaseFragment : Fragment(), MvpView {
         }
     }
 
+
     protected abstract fun setUp(view: View)
 
 
