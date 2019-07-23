@@ -25,16 +25,7 @@
     <string name="some_error">Some Error Occurred!</string>
     <string name="connection_error">Internet connection lost!</string>
 
-    <!--Login-->
-    <string name="login_dummy">Login Dummy</string>
-    <string name="login">Login</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
 
-    <!--Login Validation-->
-    <string name="empty_email">Please provide a non empty email.</string>
-    <string name="invalid_email">Please provide a valid email.</string>
-    <string name="empty_password">Please provide a non empty password.</string>
 
     <!--about fragment-->
     <string name="project_info">This sample app implements MVP architecture using Dagger2, GreenDao, RxJava, FastAndroidNetworking and PlaceholderView</string>
@@ -70,5 +61,29 @@
     <string name="empty_screen">We do not have anything\nhere right now.</string>
     <string name="please_retry">Please Retry</string>
     <string name="retry">Retry</string>
+    <string name="skills">Skills</string>
+    <string name="experience">Experience</string>
+    <string name="education">Education</string>
+    <string name="contact_me">Contact Me</string>
+    <string name="social">Social</string>
+    <string name="app_info">App Info</string>
+    <string name="name">Eirini Televantou</string>
+    <string name="senior_android_developer">Senior Android Developer</string>
+    <string name="location">Birmingham, UK</string>
+    <string name="professional_summary">Professional Summary</string>
+    <string name="professional_experience_long">Detail-oriented Android developer with almost 6 years of professional
+        Android development experience. \n\nProficient in Mobile development from start to finish. Well-versed in inspecting
+        finished projects to maintain alignment with high quality standards. \n\nAlways using latest technologies available
+        and experiment with different architectures. \n\nGreat managerial skills and able to train junior developers and
+        inspire them to always be detailed oriented and to always push their limits.
+    </string>
+    <string name="university_of_southampton">University \nof \nSouthampton</string>
+    <string name="master_of_science">Master of Science</string>
+    <string name="bachelor_of_science">Bachelor of Science</string>
+    <string name="computer_science">Computer Science</string>
+    <string name="first_class_1_1">First Class - 1:1</string>
+    <string name="birmingham_england">Birmingham, England</string>
+    <string name="birmingham_city_university">Birmingham \nCity \nUniversity</string>
+    <string name="merit">Merit</string>
 
 </resources>

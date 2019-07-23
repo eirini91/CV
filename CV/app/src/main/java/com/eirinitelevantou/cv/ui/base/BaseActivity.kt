@@ -5,22 +5,25 @@ import android.app.AlertDialog
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.pm.PackageManager
-import android.databinding.DataBindingUtil
-import android.databinding.ViewDataBinding
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import android.os.Build
 import android.os.Bundle
-import android.support.annotation.LayoutRes
-import android.support.v7.app.AppCompatActivity
+import androidx.annotation.LayoutRes
+import androidx.appcompat.app.AppCompatActivity
 import android.view.MenuItem
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
+import androidx.appcompat.app.ActionBarDrawerToggle
 import com.eirinitelevantou.cv.R
 import com.eirinitelevantou.cv.utils.CommonUtils
 import com.eirinitelevantou.cv.utils.NetworkUtils
 
 
 import dagger.android.AndroidInjection
+import kotlinx.android.synthetic.main.activity_main.*
+import androidx.fragment.app.Fragment
 
 
 abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppCompatActivity(), BaseFragment.Callback {
@@ -92,7 +95,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
     }
 
     protected fun setupActionBar() {
-        val title = findViewById<TextView>(R.id.title)
+        val title = findViewById<TextView>(com.eirinitelevantou.cv.R.id.title)
 
         when (actionBarType) {
             KEY_NO_ACTION_BAR -> {
@@ -100,6 +103,8 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
             KEY_BACK_HOME_ACTION_BAR -> {
             }
             KEY_MAIN_ACTION_BAR -> {
+                setTitle(null)
+
             }
         }
     }
@@ -124,6 +129,19 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
         this.mViewModel = if (mViewModel == null) viewModel else mViewModel
         viewDataBinding!!.setVariable(bindingVariable, mViewModel)
         viewDataBinding!!.executePendingBindings()
+    }
+
+
+    fun loadFragment(fragment: Fragment?): Boolean {
+        //switching fragment
+        if (fragment != null) {
+            supportFragmentManager
+                .beginTransaction()
+                .replace(com.eirinitelevantou.cv.R.id.fragment_container, fragment!!)
+                .commit()
+            return true
+        }
+        return false
     }
 
     companion object {

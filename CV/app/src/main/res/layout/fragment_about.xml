@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+                name="viewModel"
+                type="com.pkfcooperparry.template.ui.form.page.tab.AboutFragmentViewModel"/>
+
+    </data>
+
+    <RelativeLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp">
+
+        <RelativeLayout
+                android:id="@+id/topPanel"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+        >
+            <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/photo"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorAccent"/>
+
+            <TextView
+                    android:id="@+id/name"
+                    android:layout_marginStart="15dp"
+                    android:gravity="start"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_toEndOf="@+id/profile_image"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/name"/>
+
+            <TextView
+                    android:id="@+id/title"
+                    android:layout_marginStart="15dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_toEndOf="@+id/profile_image"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/senior_android_developer"/>
+
+            <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/title"
+                    android:layout_marginStart="15dp"
+                    android:gravity="start|bottom"
+                    android:id="@+id/location"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_toEndOf="@+id/profile_image"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/location"/>
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/divider"
+                android:layout_below="@+id/topPanel"
+
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent" android:layout_height="4dp"
+                android:background="@color/colorPrimary"/>
+
+        <TextView
+                android:id="@+id/professionalSummaryTitle"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/divider"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="25sp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/professional_summary"/>
+
+        <View
+                android:id="@+id/divider2"
+                android:layout_alignStart="@+id/professionalSummaryTitle"
+                android:layout_alignEnd="@id/professionalSummaryTitle"
+                android:layout_below="@+id/professionalSummaryTitle"
+                android:layout_width="wrap_content" android:layout_height="2dp"
+                android:background="@color/colorPrimary"/>
+
+        <TextView
+                android:id="@+id/professionalSummary"
+                android:layout_marginTop="20dp"
+                android:scrollbars="vertical"
+
+                android:layout_below="@+id/divider2"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="20sp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/professional_experience_long"/>
+
+    </RelativeLayout>
+
+</layout>

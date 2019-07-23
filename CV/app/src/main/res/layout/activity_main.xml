@@ -1,58 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
-
     <data>
-
         <import type="android.view.View"/>
-
         <variable
                 name="viewModel"
                 type="com.pkfcooperparry.template.ui.main.MainViewModel"/>
     </data>
 
-    <android.support.v4.widget.DrawerLayout
+    <androidx.drawerlayout.widget.DrawerLayout
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/drawer_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <android.support.design.widget.CoordinatorLayout
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:id="@+id/cl_root_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipChildren="false">
 
-            <LinearLayout
+            <RelativeLayout
                     android:id="@+id/activity_main"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent">
 
-                <android.support.design.widget.AppBarLayout
+                <com.google.android.material.appbar.AppBarLayout
+                        android:id="@+id/toolbarLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:elevation="5dp">
 
-                    <android.support.v7.widget.Toolbar
+                    <androidx.appcompat.widget.Toolbar
                             android:id="@+id/toolbar"
                             style="@style/Toolbar"
                             app:subtitleTextColor="@color/white"
                             app:title="@string/app_name"
                             app:titleTextAppearance="@style/Toolbar.TitleText"
-                            app:titleTextColor="@color/white"/>
+                            app:titleTextColor="@color/white">
 
-                    <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/light_gray"/>
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
 
-                </android.support.design.widget.AppBarLayout>
+                            <ImageView android:src="@drawable/etname"
+                                       android:layout_marginEnd="50dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="20dp"/>
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.Toolbar>
 
 
-            </LinearLayout>
-        </android.support.design.widget.CoordinatorLayout>
+                </com.google.android.material.appbar.AppBarLayout>
 
-        <android.support.design.widget.NavigationView
+                <FrameLayout
+                        android:id="@+id/fragment_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/toolbarLayout"
+                        android:layout_above="@+id/bottom_navigation"/>
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/bottom_navigation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorPrimary"
+                        app:itemIconTint="@color/bottom_navigation_tint"
+                        app:itemTextColor="@color/bottom_navigation_tint"
+                        app:menu="@menu/main_bottom"/>
+            </RelativeLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.navigation.NavigationView
                 android:id="@+id/navigation_view"
                 style="@style/Widget.Design.NavigationView"
                 android:layout_width="wrap_content"
@@ -72,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|end"
                     android:padding="5dp"/>
-        </android.support.design.widget.NavigationView>
-    </android.support.v4.widget.DrawerLayout>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
 
 </layout>

@@ -5,10 +5,10 @@ import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.support.v4.app.DialogFragment
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentTransaction
+import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.RelativeLayout
@@ -16,7 +16,7 @@ import android.widget.RelativeLayout
 import java.util.Objects
 import java.util.Objects.*
 
-abstract class BaseDialog : DialogFragment() {
+abstract class BaseDialog : androidx.fragment.app.DialogFragment() {
 
     var baseActivity: BaseActivity<*, *>? = null
         private set
@@ -60,7 +60,7 @@ abstract class BaseDialog : DialogFragment() {
         super.onDetach()
     }
 
-    override fun show(fragmentManager: FragmentManager, tag: String) {
+    override fun show(fragmentManager: androidx.fragment.app.FragmentManager, tag: String) {
         val transaction = fragmentManager.beginTransaction()
         val prevFragment = fragmentManager.findFragmentByTag(tag)
         if (prevFragment != null) {

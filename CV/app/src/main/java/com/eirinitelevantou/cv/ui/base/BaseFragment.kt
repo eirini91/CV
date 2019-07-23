@@ -1,11 +1,11 @@
 package com.eirinitelevantou.cv.ui.base
 
 import android.content.Context
-import android.databinding.DataBindingUtil
-import android.databinding.ViewDataBinding
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import android.os.Bundle
-import android.support.annotation.LayoutRes
-import android.support.v4.app.Fragment
+import androidx.annotation.LayoutRes
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +16,7 @@ import dagger.android.support.AndroidSupportInjection
  * Created by Eirini Televantou on 24/09/2018.
  */
 
-abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>> : Fragment() {
+abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>> : androidx.fragment.app.Fragment() {
 
     var baseActivity: BaseActivity<*, *>? = null
         private set
