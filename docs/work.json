@@ -3,7 +3,7 @@
         "title": "Senior Mobile Developer",
         "company": "PKF Cooper Parry Sync Interactive",
         "address": "Birmingham, UK",
-        "icon": "http://www.syncinteractive.co.uk/wp-content/uploads/2019/05/SYNC-cooper-parry.png",
+        "icon": "https://raw.githubusercontent.com/eirini91/CV/master/docs/jobicons/cooperparry.png",
         "dates": "08/2018 t To Date",
         "description": "Mobile App Agency",
         "responsibilities": [
@@ -76,7 +76,7 @@
         "company": "Castleton Technologies PLC",
         "address": "Birmingham, UK",
         "dates": "05/2017 to 08/2018",
-        "icon":"https://image-store.slidesharecdn.com/562e7c0a-e640-441c-94da-c12f21ed8216-large.png",
+        "icon":"https://github.com/eirini91/CV/blob/master/docs/jobicons/castleton.png?raw=true",
         "description": "The company focuses on software for Social Housing companies",
         "responsibilities": [
             {
@@ -132,7 +132,7 @@
         "company": "Sync Interactive",
         "address": "Birmingham, UK",
         "dates": "08/2015 to 05/2017",
-        "icon":"https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/33778933_1528497277262507_1383955912946876416_n.png?_nc_cat=111&_nc_oc=AQkwkO5J-0JIbQarWNNm9ErZ4xSuxek2vIRjrQ2QSxarPaVLWDoiYAvdyAVmqfHhcLI&_nc_ht=scontent-lhr3-1.xx&oh=252afa46c3563699d70834c198a1710c&oe=5E4E60AF",
+        "icon":"https://github.com/eirini91/CV/blob/master/docs/jobicons/syncfirst.png?raw=true",
         "description": "Mobile App Agency",
         "responsibilities": [
             {
@@ -183,7 +183,7 @@
         "title": "Android Developer",
         "company": "The Genuine Gemstone Company",
         "address": "Reditch, UK",
-        "icon":"https://cdn.gemporia.com/images/og/fb.jpg",
+        "icon":"https://github.com/eirini91/CV/blob/master/docs/jobicons/gemporia.png?raw=true",
         "dates": "02/2014 to 08/2015",
         "description": "Gemstone and jewellery selling TV channels",
         "responsibilities": [
@@ -232,7 +232,7 @@
         "company": "-",
         "address": "Birmingham, UK",
         "dates": "-",
-        "icon":"https://github.com/eirini91/CV/blob/master/docs/etlogo.png",
+        "icon":"https://github.com/eirini91/CV/blob/master/docs/jobicons/logo.png?raw=true",
         "description": "Apps that I developed on my free time",
         "responsibilities": null,
         "examples": [
