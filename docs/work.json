@@ -1,10 +1,32 @@
 {
     "jobs":[{
+        "title": "Contract Senior Mobile Developer",
+        "company": "One Advanced",
+        "address": "Birmingham, UK",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/jobicons/advanced.png?raw=true",
+        "dates": "10/2019 To End of Contract 12/2019",
+        "description": "Software House",
+        "responsibilities": [
+            {
+                "title": "Updating current app network implementations",
+                "description": "Updated the app's network libraries and added/changed/removed API calls"
+            }, 
+            {
+                "title": "Converted Loose architecture to MVP architecture",
+                "description": "Converted the apps architecture to the MVP Pattern"
+            }, 
+            {
+                "title": "Added additional functionality to the existing App",
+                "description": Added multiple new features to their existing App"
+            }
+        ]
+},
+            {
         "title": "Senior Mobile Developer",
         "company": "PKF Cooper Parry Sync Interactive",
         "address": "Birmingham, UK",
         "icon": "https://raw.githubusercontent.com/eirini91/CV/master/docs/jobicons/cooperparry.png",
-        "dates": "08/2018 t To Date",
+        "dates": "08/2018 to 09/2019",
         "description": "Mobile App Agency",
         "responsibilities": [
             {
