@@ -5,28 +5,36 @@
         "items": [
             {
                 "name":"Java",
-                "level": "Excelent"
+                "level": "Excelent",
+                "levelId": 4
             },{
                 "name":"Kotlin",
-                "level": "Basic"
+                "level": "Good",
+                "levelId": 2
             },{
                 "name":"RXJava",
-                "level": "Very Good"
+                "level": "Very Good",
+                "levelId": 3
             },{
                 "name":"MVP Architecture",
-                "level": "Excelent"
+                "level": "Excelent",
+                "levelId": 4
             },{
                 "name":"MVVM Architecture",
-                "level": "Good"
+                "level": "Good",
+                "levelId": 2
             },{
                 "name":"Dagger2",
-                "level": "Good"
+                "level": "Very Good",
+                "levelId": 3
             },{
                 "name":"Unit Testing",
-                "level": "Good"
+                "level": "Good",
+                "levelId": 2
             },{
                 "name":"Retrofit",
-                "level": "Excelent"
+                "level": "Excelent",
+                "levelId": 4
             }]
     },{
         "name": "iOS Development",
@@ -34,10 +42,12 @@
         "items": [
             {
                 "name":"ObjC",
-                "level": "Basic"
+                "level": "Basic",
+                "levelId":1
             },{
                 "name":"Swift",
-                "level": "Basic"}
+                "level": "Basic",
+                "levelId": 1}
             ]
     },{
         "name": "CI",
@@ -45,7 +55,13 @@
         "items": [
             {
                 "name":"Jenkins",
-                "level": "Good"
+                "level": "Very Good",
+                "levelId": 3
+            }, 
+            {
+                "name":"Bitrise",
+                "level": "Very Good",
+                "levelId": 3
             }
         ]
     },{
@@ -54,13 +70,16 @@
         "items": [
             {
                 "name":"Jira",
-                "level": "Excelent"
+                "level": "Excelent",
+                "levelId": 4
             },{
                 "name": "Trello",
-                "level": "Excelent"
+                "level": "Excelent",
+                "levelId": 4
             },{
                 "name": "Azure DevOps",
-                "level": "Excelent"
+                "level": "Excelent",
+                "levelId":4
             }
         ]
     },{
@@ -69,7 +88,8 @@
         "items": [
             {
                 "name":"Agile Scrum",
-                "level": "Excelent"
+                "level": "Excelent",
+                "levelId": 5
             }
         ]
     },
@@ -79,11 +99,13 @@
         "items": [
             {
                 "name":"JSON",
-                "level": "Excelent"
+                "level": "Excelent",
+                "levelId": 4
             },
             {
                 "name":"XML",
-                "level": "Excelent"
+                "level": "Excelent",
+                "levelId": 4
             }
         ]
     },
@@ -93,19 +115,23 @@
         "items": [
             {
                 "name":".net Core",
-                "level": "Basic"
+                "level": "Basic",
+                "levelId":1
             },
             {
                 "name":"C#",
-                "level": "Basic"
+                "level": "Basic",
+                "levelId": 1
             },
             {
                 "name":"HTML",
-                "level": "Very Good"
+                "level": "Very Good",
+                "levelId": 3
             },
             {
                 "name":"Azure Api hosting and SQL",
-                "level": "Basic"
+                "level": "Basic",
+                "levelId": 1
             }
         ]
     }]
