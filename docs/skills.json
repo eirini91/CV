@@ -4,6 +4,7 @@
         "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/android.png?raw=true",
         "parent": true,
         "level": "Excelent",
+        "levelId": 4,
         "items": [
             {
                 "name":"Java",
@@ -50,6 +51,7 @@
         "name": "iOS Development",
         "level": "Bacic",
         "parent": true,
+        "levelId": 1,
         "items": [
             {
                 "name":"ObjC",
@@ -65,6 +67,7 @@
     },{
         "name": "CI",
         "parent": true,
+        "levelId": 3,
         "level": "Good",
         "items": [
             {
@@ -83,6 +86,7 @@
     },{
         "name": "Project Management",
         "level": "Excelent",
+        "levelId": 4,
         "parent": true,
         "items": [
             {
@@ -119,6 +123,7 @@
         "name": "Markup",
         "parent": true,
         "level": "Excelent",
+        "levelId": 4,
         "items": [
             {
                 "name":"JSON",
@@ -138,6 +143,7 @@
         "name": "Web Development",
         "level": "Basic",
         "parent": true,
+        "levelId": 1,
         "items": [
             {
                 "name":".net Core",
