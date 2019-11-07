@@ -114,12 +114,13 @@
         "level": "Very Good",
         "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/method.png?raw=true",
         "parent": true,
+        "levelId": 4,
         "items": [
             {
                 "name":"Agile Scrum",
                 "level": "Excelent",
                 "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/agile.png?raw=true",
-                "levelId": 5
+                "levelId": 4
             }
         ]
     },
