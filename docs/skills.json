@@ -69,7 +69,7 @@
         "name": "CI",
         "parent": true,
         "levelId": 3,
-        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/ci.png?web=true",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/ci.png?raw=true",
         "level": "Good",
         "items": [
             {
@@ -89,7 +89,7 @@
         "name": "Project Management",
         "level": "Excelent",
         "levelId": 4,
-        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/project.png?web=true",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/project.png?raw=true",
         "parent": true,
         "items": [
             {
@@ -112,7 +112,7 @@
     },{
         "name": "Development Methodologies",
         "level": "Very Good",
-        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/method.png?web=true",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/method.png?raw=true",
         "parent": true,
         "items": [
             {
@@ -127,7 +127,7 @@
         "name": "Markup",
         "parent": true,
         "level": "Excelent",
-        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/markup.png?web=true",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/markup.png?raw=true",
         "levelId": 4,
         "items": [
             {
