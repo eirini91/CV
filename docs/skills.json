@@ -1,39 +1,48 @@
 {
     "skills":[{
         "name": "Android Development",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/android.png?raw=true",
         "level": "Excelent",
         "items": [
             {
                 "name":"Java",
                 "level": "Excelent",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/java.png?raw=true",
                 "levelId": 4
             },{
                 "name":"Kotlin",
                 "level": "Good",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/kotlin.png?raw=true",
                 "levelId": 2
             },{
                 "name":"RXJava",
-                "level": "Very Good",
+                "level": "Very Good",       
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/rxjava.png?raw=true",
                 "levelId": 3
             },{
                 "name":"MVP Architecture",
                 "level": "Excelent",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/mvp.png?raw=true",
                 "levelId": 4
             },{
                 "name":"MVVM Architecture",
                 "level": "Good",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/mvvm.png?raw=true",
                 "levelId": 2
             },{
                 "name":"Dagger2",
                 "level": "Very Good",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/dagger.png?raw=true",
                 "levelId": 3
             },{
                 "name":"Unit Testing",
                 "level": "Good",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/unittest.png?raw=true",
                 "levelId": 2
             },{
                 "name":"Retrofit",
                 "level": "Excelent",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/retrofit.png?raw=true",
                 "levelId": 4
             }]
     },{
@@ -43,10 +52,12 @@
             {
                 "name":"ObjC",
                 "level": "Basic",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/objc.png?raw=true",
                 "levelId":1
             },{
                 "name":"Swift",
                 "level": "Basic",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/swift.png?raw=true",
                 "levelId": 1}
             ]
     },{
@@ -56,11 +67,13 @@
             {
                 "name":"Jenkins",
                 "level": "Very Good",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/jenkins.png?raw=true",
                 "levelId": 3
             }, 
             {
                 "name":"Bitrise",
                 "level": "Very Good",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/bitrise.png?raw=true",
                 "levelId": 3
             }
         ]
@@ -71,14 +84,17 @@
             {
                 "name":"Jira",
                 "level": "Excelent",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/jira.png?raw=true",
                 "levelId": 4
             },{
                 "name": "Trello",
                 "level": "Excelent",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/trello.png?raw=true",
                 "levelId": 4
             },{
                 "name": "Azure DevOps",
                 "level": "Excelent",
+                 "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/azure.png?raw=true",
                 "levelId":4
             }
         ]
@@ -89,6 +105,7 @@
             {
                 "name":"Agile Scrum",
                 "level": "Excelent",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/agile.png?raw=true",
                 "levelId": 5
             }
         ]
@@ -100,11 +117,13 @@
             {
                 "name":"JSON",
                 "level": "Excelent",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/json.png?raw=true",
                 "levelId": 4
             },
             {
                 "name":"XML",
                 "level": "Excelent",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/xml.png?raw=true",
                 "levelId": 4
             }
         ]
@@ -116,21 +135,25 @@
             {
                 "name":".net Core",
                 "level": "Basic",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/net.png?raw=true",
                 "levelId":1
             },
             {
                 "name":"C#",
                 "level": "Basic",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/csharp.png?raw=true",
                 "levelId": 1
             },
             {
                 "name":"HTML",
                 "level": "Very Good",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/html.png?raw=true",
                 "levelId": 3
             },
             {
                 "name":"Azure Api hosting and SQL",
                 "level": "Basic",
+                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/azure.png?raw=true",
                 "levelId": 1
             }
         ]
