@@ -24,12 +24,12 @@
             },{
                 "name":"MVP Architecture",
                 "level": "Excelent",
-                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/mvp.png?raw=true",
+                "icon": "https://raw.githubusercontent.com/eirini91/CV/master/docs/skillsicons/MPV.png",
                 "levelId": 4
             },{
                 "name":"MVVM Architecture",
                 "level": "Good",
-                "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/mvvm.png?raw=true",
+                "icon": "https://raw.githubusercontent.com/eirini91/CV/master/docs/skillsicons/MVVM.png",
                 "levelId": 2
             },{
                 "name":"Dagger2",
@@ -50,6 +50,7 @@
     },{
         "name": "iOS Development",
         "level": "Bacic",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/ios.png?raw=true",
         "parent": true,
         "levelId": 1,
         "items": [
@@ -68,6 +69,7 @@
         "name": "CI",
         "parent": true,
         "levelId": 3,
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/ci.png?web=true",
         "level": "Good",
         "items": [
             {
@@ -87,6 +89,7 @@
         "name": "Project Management",
         "level": "Excelent",
         "levelId": 4,
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/project.png?web=true",
         "parent": true,
         "items": [
             {
@@ -109,6 +112,7 @@
     },{
         "name": "Development Methodologies",
         "level": "Very Good",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/method.png?web=true",
         "parent": true,
         "items": [
             {
@@ -123,6 +127,7 @@
         "name": "Markup",
         "parent": true,
         "level": "Excelent",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/markup.png?web=true",
         "levelId": 4,
         "items": [
             {
@@ -143,6 +148,7 @@
         "name": "Web Development",
         "level": "Basic",
         "parent": true,
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/net.png?web=true",
         "levelId": 1,
         "items": [
             {
