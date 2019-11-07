@@ -148,7 +148,7 @@
         "name": "Web Development",
         "level": "Basic",
         "parent": true,
-        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/net.png?web=true",
+        "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/web.png?raw=true",
         "levelId": 1,
         "items": [
             {
