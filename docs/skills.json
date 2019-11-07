@@ -2,7 +2,7 @@
     "skills":[{
         "name": "Android Development",
         "icon": "https://github.com/eirini91/CV/blob/master/docs/skillsicons/android.png?raw=true",
-        "parent" true,
+        "parent": true,
         "level": "Excelent",
         "items": [
             {
@@ -49,7 +49,7 @@
     },{
         "name": "iOS Development",
         "level": "Bacic",
-        "parent" true,
+        "parent": true,
         "items": [
             {
                 "name":"ObjC",
@@ -64,7 +64,7 @@
             ]
     },{
         "name": "CI",
-        "parent" true,
+        "parent": true,
         "level": "Good",
         "items": [
             {
@@ -83,7 +83,7 @@
     },{
         "name": "Project Management",
         "level": "Excelent",
-        "parent" true,
+        "parent": true,
         "items": [
             {
                 "name":"Jira",
@@ -105,7 +105,7 @@
     },{
         "name": "Development Methodologies",
         "level": "Very Good",
-        "parent" true,
+        "parent": true,
         "items": [
             {
                 "name":"Agile Scrum",
@@ -117,7 +117,7 @@
     },
     {
         "name": "Markup",
-        "parent" true,
+        "parent": true,
         "level": "Excelent",
         "items": [
             {
@@ -137,7 +137,7 @@
     {
         "name": "Web Development",
         "level": "Basic",
-        "parent" true,
+        "parent": true,
         "items": [
             {
                 "name":".net Core",
