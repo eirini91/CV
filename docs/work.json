@@ -25,7 +25,7 @@
         {
           "title": "Exchequer Mobile",
           "description": "Created internal project for use by the company’s employees. App included: Suggestion board where users could suggest and like ideas, How is it going section where users got a weekly notification to remind them to anonymously say how they are feeling this week and more.",
-          "link": "N/A",
+          "link": null,
           "technologies": [
             1,
             2,
@@ -72,7 +72,7 @@
         {
           "title": "Employee App",
           "description": "Created internal project for use by the company’s employees. App included: Suggestion board where users could suggest and like ideas, How is it going section where users got a weekly notification to remind them to anonymously say how they are feeling this week and more.",
-          "link": "N/A",
+          "link": null,
           "technologies": [
             1,
             2,
@@ -95,7 +95,7 @@
         {
           "title": "Customer Ticketing App",
           "description": "Converted our current Connectwise ticketing system into an app which our customer could use to contact our support lines.",
-          "link": "N/A",
+          "link": null,
           "technologies": [
             1,
             2,
@@ -225,7 +225,7 @@
         {
           "title": "EDRM",
           "description": "Developed an EDRM systemn app plugin of the existing desktop EDRM system the company offers.",
-          "link": "N/A",
+          "link": null,
           "technologies": [
             1,
             2,
@@ -236,7 +236,7 @@
         {
           "title": "Dynamicly Created App",
           "description": "Developed an app which was dynamicly generated using a JSON. Including all activities, UI elements, Actions and Network calls",
-          "link": "N/A",
+          "link": null,
           "technologies": [
             1,
             2,
@@ -247,7 +247,7 @@
         {
           "title": "Whitelabel house management app",
           "description": "Created and maintained a white label app the company was reselling to its customers. ",
-          "link": "N/A",
+          "link": null,
           "technologies": [
             1,
             2,
@@ -258,7 +258,7 @@
         {
           "title": "Multitentant Customer App",
           "description": "Created a multi tenant app where all customers based on their login details would see different styles in the app and different sections enabled/disabled",
-          "link": "N/A",
+          "link": null,
           "technologies": [
             1,
             2,
