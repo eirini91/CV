@@ -11,6 +11,10 @@ import com.pkfcooperparry.template.ui.form.page.tab.AboutFragmentViewInterface
 import com.pkfcooperparry.template.ui.form.page.tab.AboutFragmentViewModel
 
 import javax.inject.Inject
+import android.text.method.ScrollingMovementMethod
+import com.eirinitelevantou.cv.ui.base.BaseViewModel
+import kotlinx.android.synthetic.main.fragment_about.*
+
 
 class AboutFragment : BaseFragment<FragmentAboutBinding, AboutFragmentViewModel>(), AboutFragmentViewInterface {
     var navigator: Navigator? = null
@@ -25,7 +29,7 @@ class AboutFragment : BaseFragment<FragmentAboutBinding, AboutFragmentViewModel>
         get() = BR.viewModel
 
     override val layoutId: Int
-        get() = R.layout.fragment_about
+        get() = com.eirinitelevantou.cv.R.layout.fragment_about
 
     override fun getViewModel(): AboutFragmentViewModel {
         return this.aboutFragmentViewModel!!
@@ -46,6 +50,8 @@ class AboutFragment : BaseFragment<FragmentAboutBinding, AboutFragmentViewModel>
     }
 
     override fun setupUi() {
+        professionalSummary.setMovementMethod(ScrollingMovementMethod())
+
 
     }
 

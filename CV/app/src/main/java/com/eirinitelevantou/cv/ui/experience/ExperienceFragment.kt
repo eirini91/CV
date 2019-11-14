@@ -2,20 +2,29 @@ package com.eirinitelevantou.cv.ui.about
 
 import android.os.Bundle
 import android.view.View
-import android.widget.LinearLayout
 import com.eirinitelevantou.cv.BR
 import com.eirinitelevantou.cv.R
 import com.eirinitelevantou.cv.databinding.FragmentExperienceBinding
+import com.eirinitelevantou.cv.network.model.Job
 import com.eirinitelevantou.cv.ui.base.BaseFragment
+import com.eirinitelevantou.cv.ui.experience.ExperienceAdapter
 import com.eirinitelevantou.cv.utils.Navigator
 import com.eirinitelevantou.cv.ui.experience.ExperienceFragmentViewInterface
 import com.pkfcooperparry.template.ui.form.page.tab.ExperienceFragmentViewModel
+import kotlinx.android.synthetic.main.fragment_experience.*
 
 import javax.inject.Inject
 
 class ExperienceFragment : BaseFragment<FragmentExperienceBinding, ExperienceFragmentViewModel>(),
     ExperienceFragmentViewInterface {
+    var adapter: ExperienceAdapter? = null
 
+    override fun initAdapter(jobs: List<Job>?) {
+        adapter = ExperienceAdapter(this!!.context!!, jobs) { item ->
+            navigator!!.navigateToJobDetailsView(this.context!!, item)
+        }
+        recyclerView.adapter = adapter;
+    }
 
     var navigator: Navigator? = null
         @Inject set
@@ -24,7 +33,6 @@ class ExperienceFragment : BaseFragment<FragmentExperienceBinding, ExperienceFra
         @Inject set
 
     internal var fragmentExperienceBinding: FragmentExperienceBinding? = null
-    internal lateinit var linearLayout: LinearLayout
 
     override val bindingVariable: Int
         get() = BR.viewModel
@@ -46,7 +54,6 @@ class ExperienceFragment : BaseFragment<FragmentExperienceBinding, ExperienceFra
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         fragmentExperienceBinding = viewDataBinding
-        linearLayout = view.findViewById(R.id.parent)
         setupUi()
 
     }

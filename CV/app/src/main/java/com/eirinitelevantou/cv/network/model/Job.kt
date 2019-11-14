@@ -1,35 +1,32 @@
 package com.eirinitelevantou.cv.network.model
 
+import androidx.databinding.BaseObservable
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-
-
-class Job {
-
+data class Job(
     @SerializedName("title")
-    @Expose
-    private val title: String? = null
+    @Expose val title: String,
     @SerializedName("company")
     @Expose
-    private val company: String? = null
+    val company: String,
     @SerializedName("address")
     @Expose
-    private val address: String? = null
+    val address: String,
     @SerializedName("dates")
     @Expose
-    private val dates: String? = null
+    val dates: String,
     @SerializedName("description")
     @Expose
-    private val description: String? = null
+    val description: String,
+    @SerializedName("icon")
+    @Expose
+    val icon: String,
     @SerializedName("responsibilities")
     @Expose
-    private val responsibilities: List<Responsibility>? = null
+    val responsibilities: List<Responsibility>,
     @SerializedName("examples")
     @Expose
-    private val examples: List<WorkExample>? = null
-
-
-
-
-}
+    val examples: List<WorkExample>
+) : Serializable, BaseObservable() {}

@@ -77,13 +77,54 @@
         and experiment with different architectures. \n\nGreat managerial skills and able to train junior developers and
         inspire them to always be detailed oriented and to always push their limits.
     </string>
-    <string name="university_of_southampton">University \nof \nSouthampton</string>
+    <string name="university_of_southampton">University of \nSouthampton</string>
     <string name="master_of_science">Master of Science</string>
     <string name="bachelor_of_science">Bachelor of Science</string>
     <string name="computer_science">Computer Science</string>
     <string name="first_class_1_1">First Class - 1:1</string>
     <string name="birmingham_england">Birmingham, England</string>
-    <string name="birmingham_city_university">Birmingham \nCity \nUniversity</string>
+    <string name="birmingham_city_university">Birmingham City \nUniversity</string>
     <string name="merit">Merit</string>
+    <string name="dates">Dates</string>
+    <string name="address">Address</string>
+    <string name="description">Description</string>
+    <string name="responsibilities">Responsibilities</string>
+    <string name="examples_of_work">Examples of Work</string>
+    <string name="technologies_used">Technologies Used</string>
+    <string name="architecture">Architecture</string>
+    <string name="language">Language</string>
+    <string name="network_library">Network Library</string>
+    <string name="the_app_has_been_developed_using_the_mvvm_architecture_along_with_jetpacks_live_data_binding_methods">The app has been developed using the MVVM Architecture along with jetpacks live data binding methods.</string>
+    <string name="the_app_has_been_solely_written_in_kotlin_and_rxkotlin">The app has been solely written in Kotlin and RXKotlin.</string>
+    <string name="the_network_library_used_in_the_app_is_retrofit">The network library used in the app is Retrofit.</string>
+    <string name="dependency_injection_library">Dependency Injection Library</string>
+    <string name="dagger_2_has_been_use_to_inject_dependencies_in_the_app">Dagger 2 has been use to inject dependencies in the app.</string>
+    <string name="other_libraries">Other Libraries</string>
+    <string name="libraries_used">Libraries used include: \n  -https://github.com/yarolegovich/DiscreteScrollView \n -https://github.com/hdodenhof/CircleImageView \n -https://square.github.io/picasso/ \n -https://github.com/google/gson</string>
+    <string name="app_code">App code</string>
+    <string name="source_code_link">You can access the source code at: https://github.com/eirini91/CV</string>
+    <string name="download_pdf_cv">Download PDF CV</string>
+    <string name="download_and_email_pdf_cv">Download and Email PDF CV</string>
+    <string name="email">Email</string>
+    <string name="eirini_email">televantou91@gmail.com</string>
+    <string name="eirini_televantou">Eirini Televantou</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="eirini_phone">+447711580804</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="linkedin_url">https://www.linkedin.com/in/eirini-televantou-91ba0028/</string>
+    <string name="github">Github</string>
+    <string name="github_url">https://github.com/eirini91</string>
+    <string name="appstore_url"><![CDATA[https://play.google.com/store/apps/developer?id=Eirini+Televantou&hl=en]]></string>
+    <string name="google_play_store">Google Play Store</string>
+    <string name="notification_channel_id">etcv_channel_id</string>
+    <string name="notification_channel_name">CV Downloading</string>
+    <string name="notification_channel_description">Notification Channel to notify users when the CV has been downloaded</string>
+    <string name="download_success">File downloaded. Check your downloads or click on the notifcation above</string>
+    <string name="download_failure">Something went wrong. Please try again.</string>
+    <string name="cv_downloaded">CV Downloaded</string>
+    <string name="eirini_cv_downloaded">Eirini\'s CV is downloaded</string>
+    <string name="select_app_to_send">Select an app to send the email</string>
+    <string name="checkout_cv">Check out Eirini\'s CV</string>
+    <string name="etcv">Eirini Televantou CV</string>
 
 </resources>

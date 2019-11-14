@@ -10,11 +10,9 @@ import com.eirinitelevantou.cv.utils.rx.SchedulerProvider
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
-
 class ExperienceFragmentViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvider) :
     BaseViewModel<ExperienceFragmentViewInterface>(dataManager, schedulerProvider) {
     val isDataAvailable = ObservableBoolean(false)
-
 
     override fun setViewInterface(context: Context, navigator: ExperienceFragmentViewInterface) {
         super.setViewInterface(context, navigator)
@@ -33,11 +31,12 @@ class ExperienceFragmentViewModel(dataManager: DataManager, schedulerProvider: S
 
                 .subscribe({ response ->
                     setIsLoading(false)
-                    if (response.isEmpty()) {
+                    if (response == null) {
                         isDataAvailable.set(false)
-
                     } else {
                         isDataAvailable.set(true)
+                        getViewInterface().initAdapter(response.jobs)
+
                     }
 
                 }, { throwable ->

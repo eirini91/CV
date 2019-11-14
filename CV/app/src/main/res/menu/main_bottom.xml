@@ -5,25 +5,25 @@
     <item
         android:id="@+id/action_about"
         android:title="@string/about"
-        android:icon="@drawable/ic_action_about"
+        android:icon="@drawable/ic_about"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_schools"
         android:title="@string/education"
-        android:icon="@drawable/ic_action_school"
+        android:icon="@drawable/ic_uni"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_experiences"
         android:title="@string/experience"
-        android:icon="@drawable/ic_action_education"
+        android:icon="@drawable/ic_jobs"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_skills"
         android:title="@string/skills"
-        android:icon="@drawable/ic_action_skills"
+        android:icon="@drawable/ic_skills"
         app:showAsAction="always" />
 
 </menu>

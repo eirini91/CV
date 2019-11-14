@@ -8,7 +8,6 @@ class SplashViewModel(dataManager: DataManager, schedulerProvider: SchedulerProv
 
     fun decideNextActivity() {
             getViewInterface().openMainActivity()
-
     }
 }
 

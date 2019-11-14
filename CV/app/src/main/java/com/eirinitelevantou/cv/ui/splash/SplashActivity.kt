@@ -41,6 +41,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), S
 
     override fun openMainActivity() {
         navigator!!.navigateToMainView(this)
+        finish()
     }
 
     companion object {

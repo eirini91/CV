@@ -3,187 +3,210 @@
 
     <data>
 
-        <import type="android.view.View"/>
+        <import type="android.view.View" />
 
         <variable
                 name="viewModel"
-                type="com.eirinitelevantou.cv.ui.school.SchoolFragmentViewModel"/>
+                type="com.eirinitelevantou.cv.ui.school.SchoolFragmentViewModel" />
 
     </data>
 
     <LinearLayout
-            android:background="@color/white"
             android:id="@+id/parent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/white"
             android:orientation="vertical"
-            android:paddingRight="30dp"
-            android:paddingLeft="30dp">
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
 
         <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_marginTop="20dp"
-                android:layout_width="match_parent" android:layout_height="0dp"
                 android:layout_weight="1">
 
 
             <ImageView
                     android:id="@+id/uosLogo"
-                    android:src="@drawable/uos_logo"
-                    android:layout_width="150dp" android:layout_height="150dp"/>
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/uos_logo" />
 
             <TextView
-                    android:layout_toEndOf="@id/uosLogo"
+                    android:id="@+id/uosName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/uosLogo"
                     android:layout_alignParentEnd="true"
-                    android:id="@+id/uosName"
+                    android:layout_toEndOf="@id/uosLogo"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:textSize="25sp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/university_of_southampton"/>
+                    android:text="@string/university_of_southampton"
+                    android:textSize="20sp" />
 
 
             <TextView
                     android:id="@+id/uosLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@id/uosName"
-                    android:layout_alignBottom="@+id/uosLogo"
+                    android:layout_marginStart="20dp"
+                    android:gravity="bottom"
+                   android:layout_alignBottom="@+id/uosLogo"
                     android:layout_toEndOf="@id/uosLogo"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Chilworth, England"
+                    android:textSize="15sp" />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/uosLogo"
                     android:gravity="center"
-                    android:layout_alignParentEnd="true"
-                    android:fontFamily="sans-serif-condensed"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="Chilworth, England"/>
-            <TextView
-                    android:layout_below="@id/uosLogo"
-                    android:id="@+id/title"
-                    android:layout_marginTop="15dp"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="start"
-                    android:fontFamily="sans-serif-condensed"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/master_of_science"/>
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="start"
+                        android:text="@string/master_of_science"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
 
-            <TextView
-                    android:id="@+id/module"
-                    android:layout_below="@id/title"
-                    android:layout_marginTop="15dp"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="start"
-                    android:fontFamily="sans-serif-condensed"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="Software Engineering"/>
+                <TextView
+                        android:id="@+id/module"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="start"
+                        android:text="Software Engineering"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
 
 
-            <TextView
-                    android:id="@+id/uosGrade"
-                    android:layout_below="@id/module"
-                    android:layout_marginTop="15dp"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="start"
-                    android:fontFamily="sans-serif-smallcaps"
-                    android:textSize="20sp"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/merit"/>
+                <TextView
+                        android:id="@+id/uosGrade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="start"
+                        android:text="@string/merit"
+                        android:textSize="20sp" />
 
-            <TextView
-                    android:layout_below="@id/uosGrade"
-                    android:layout_marginTop="15dp"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="start"
-                    android:fontFamily="sans-serif-smallcaps"
-                    android:textSize="20sp"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="2012-2013"/>
-
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="start"
+                        android:text="2012-2013"
+                        android:textSize="20sp" />
+            </LinearLayout>
         </RelativeLayout>
 
         <View
-                android:background="@color/colorPrimary"
-                android:layout_width="match_parent" android:layout_height="5dp"/>
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
 
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_weight="1">
+                android:background="@color/colorPrimary" />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1">
+
             <ImageView
                     android:id="@+id/bcuLogo"
-                    android:src="@drawable/bcu_logo"
-                    android:layout_width="150dp" android:layout_height="150dp"/>
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bcu_logo" />
+
             <TextView
-                    android:layout_toEndOf="@id/bcuLogo"
+                    android:id="@+id/bcuName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/bcuLogo"
                     android:layout_alignParentEnd="true"
-                    android:id="@+id/bcuName"
+                    android:layout_toEndOf="@id/bcuLogo"
+
+                    android:layout_marginStart="20dp"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:textSize="25sp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/birmingham_city_university"/>
+                    android:text="@string/birmingham_city_university"
+                    android:textSize="20sp" />
 
 
             <TextView
                     android:id="@+id/bcuLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@id/bcuName"
+android:gravity="bottom"
+                    android:layout_marginStart="20dp"
                     android:layout_alignBottom="@+id/bcuLogo"
-                    android:layout_toEndOf="@id/bcuLogo"
-                    android:gravity="center"
                     android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/bcuLogo"
                     android:fontFamily="sans-serif-condensed"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/birmingham_england"/>
+                    android:text="@string/birmingham_england"
+                    android:textSize="15sp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/bcuLocation"
+                    android:gravity="center"
+                    android:orientation="vertical">
             <TextView
-                    android:layout_below="@id/bcuLogo"
                     android:id="@+id/bcutitle"
-                    android:layout_marginTop="15dp"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
+                    android:gravity="start"
+                    android:text="@string/bachelor_of_science"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/bachelor_of_science"/>
+                    android:textStyle="bold" />
 
 
             <TextView
                     android:id="@+id/bcumodule"
-                    android:layout_below="@id/bcutitle"
-                    android:layout_marginTop="15dp"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
+                    android:gravity="start"
+                    android:text="@string/computer_science"
                     android:textSize="25sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/computer_science"/>
+                    android:textStyle="bold" />
 
 
             <TextView
                     android:id="@+id/bcuGrade"
-                    android:layout_below="@id/bcumodule"
-                    android:layout_marginTop="15dp"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:textSize="20sp"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/first_class_1_1"/>
+                    android:gravity="start"
+                    android:text="@string/first_class_1_1"
+                    android:textSize="20sp" />
 
             <TextView
-                    android:layout_below="@id/bcuGrade"
-                    android:layout_marginTop="15dp"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:textSize="20sp"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="2009-2012"/>
-
+                    android:gravity="start"
+                    android:text="2009-2012"
+                    android:textSize="20sp" />
+            </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
 

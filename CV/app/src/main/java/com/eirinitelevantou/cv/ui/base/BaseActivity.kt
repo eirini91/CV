@@ -16,7 +16,6 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.eirinitelevantou.cv.R
 import com.eirinitelevantou.cv.utils.CommonUtils
 import com.eirinitelevantou.cv.utils.NetworkUtils
 
@@ -24,6 +23,13 @@ import com.eirinitelevantou.cv.utils.NetworkUtils
 import dagger.android.AndroidInjection
 import kotlinx.android.synthetic.main.activity_main.*
 import androidx.fragment.app.Fragment
+import androidx.core.app.ComponentActivity
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import android.icu.lang.UCharacter.GraphemeClusterBreak.V
+import android.widget.Toolbar
+import com.eirinitelevantou.cv.R
 
 
 abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppCompatActivity(), BaseFragment.Callback {
@@ -95,12 +101,20 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
     }
 
     protected fun setupActionBar() {
-        val title = findViewById<TextView>(com.eirinitelevantou.cv.R.id.title)
+        val title = findViewById<TextView>(R.id.title)
 
         when (actionBarType) {
             KEY_NO_ACTION_BAR -> {
             }
             KEY_BACK_HOME_ACTION_BAR -> {
+                setSupportActionBar(findViewById(R.id.toolbar))
+
+                val title = findViewById<TextView>(R.id.title)
+                title.text = actionBarTitle
+
+                supportActionBar?.setDisplayHomeAsUpEnabled(true);
+                supportActionBar?.setDisplayShowHomeEnabled(true);
+                supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_chevron_left);
             }
             KEY_MAIN_ACTION_BAR -> {
                 setTitle(null)
@@ -108,7 +122,10 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
             }
         }
     }
-
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {

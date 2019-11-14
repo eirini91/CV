@@ -2,14 +2,16 @@ package com.eirinitelevantou.cv.network.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
-
-class Responsibility {
+data class Responsibility(
     @SerializedName("title")
     @Expose
-    private val title: String? = null
+    val title: String? = null,
     @SerializedName("description")
     @Expose
-    private val description: String? = null
+    val description: String? = null
+) : Serializable {
+
 }

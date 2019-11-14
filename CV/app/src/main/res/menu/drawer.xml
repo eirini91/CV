@@ -2,16 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
-            android:id="@+id/nav_item_contact"
-            android:checked="true"
-            android:title="@string/contact_me" />
+                android:id="@+id/nav_item_contact"
+                android:checked="true"
+                android:title="@string/contact_me" />
+
+
         <item
-            android:id="@+id/nav_item_social"
-            android:checked="true"
-            android:title="@string/social" />
+                android:id="@+id/nav_item_download"
+                android:checked="true"
+                android:title="@string/download_pdf_cv" />
         <item
-            android:id="@+id/nav_item_info"
-            android:checked="true"
-            android:title="@string/app_info" />
+                android:id="@+id/nav_item_download_email"
+                android:checked="true"
+                android:title="@string/download_and_email_pdf_cv" />
+        <item
+                android:id="@+id/nav_item_info"
+                android:checked="true"
+                android:title="@string/app_info" />
     </group>
 </menu>
