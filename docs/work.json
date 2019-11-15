@@ -6,7 +6,7 @@
       "address": "Birmingham, UK",
       "icon": "https://github.com/eirini91/CV/blob/master/docs/jobicons/advanced.png?raw=true",
       "dates": "10/2019 To End of Contract 12/2019",
-      "description": "Software House",
+      "description": "Advanced is the UK’s third largest provider of business software and services with a £254m turnover, 19,000+ customers and 2,350+ employees. We provide enterprise and market-focused solutions that allow our customers to reimagine what is possible, innovate in their sectors and improve the lives of millions of people in the UK.",
       "responsibilities": [
         {
           "title": "Updating current app network implementations",
@@ -24,12 +24,16 @@
       "examples": [
         {
           "title": "Exchequer Mobile",
-          "description": "Created internal project for use by the company’s employees. App included: Suggestion board where users could suggest and like ideas, How is it going section where users got a weekly notification to remind them to anonymously say how they are feeling this week and more.",
+          "description": "Application to provide bussiness management functionality. The app allows users to view customers, projects, products, sales and transactions. The app allows users to send notification to their colleugues regarding any type of transaction or object.",
           "link": null,
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            16,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/advanced/1.jpg?raw=true",
@@ -45,7 +49,7 @@
       "address": "Birmingham, UK",
       "icon": "https://raw.githubusercontent.com/eirini91/CV/master/docs/jobicons/cooperparry.png",
       "dates": "08/2018 to 09/2019",
-      "description": "Mobile App Agency",
+      "description": "Now part of the Copper Parry Group. As one of the UK’s leading iOS & Android developers, they specialise in creating mobile applications that help you engage with your customers, increase internal productivity, promote new products and services, drive footfall to your business locations , create new revenue streams and ultimately increase your sales.",
       "responsibilities": [
         {
           "title": "Developing new apps",
@@ -75,8 +79,12 @@
           "link": null,
           "technologies": [
             1,
-            2,
-            3
+            3,
+            5,
+            6,
+            8,
+            16,
+            19
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/employee/1.jpg?raw=true",
@@ -98,8 +106,12 @@
           "link": null,
           "technologies": [
             1,
-            2,
-            3
+            3,
+            5,
+            6,
+            8,
+            16,
+            19
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/cp/1.jpg?raw=true",
@@ -111,23 +123,31 @@
         },
         {
           "title": "Cheltenham Horse Racing App",
-          "description": "Developed the app for a customer from scratch",
+          "description": "Developed the app for a customer. The app allowed users to see todays horse races and along with fictures and fittings. The app included AR and social aspects. This is only live during specific events.",
           "link": "https://play.google.com/store/apps/details?id=uk.co.prioritysms.CheltenhamRacecourse",
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            16,
+            19,
+            21
           ],
           "screenshots": []
         },
         {
           "title": "Fit for future Greggs App",
-          "description": "Developed the app for a customer from scratch",
+          "description": "Developed the app for a Greggs conference. The app was used by Greggs employees during one of their annual conferences.",
           "link": "https://play.google.com/store/apps/details?id=uk.co.prioritysms.greggs.",
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            16,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/greggs/1.jpg?raw=true",
@@ -138,12 +158,16 @@
         },
         {
           "title": "Serve Ping Pong Bar Proof of consept",
-          "description": "Developed the app for a customer from scratch",
-          "link": "https://play.google.com/store/apps/details?id=uk.co.prioritysms.CheltenhamRacecourse",
+          "description": "Developed a proof of consept app that diden't go through evetnually.",
+          "link": null,
           "technologies": [
-            1,
             2,
-            3
+            3,
+            5,
+            8,
+            16,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/serve/serve%20(1).jpg?raw=true",
@@ -159,12 +183,16 @@
         },
         {
           "title": "Rate my game",
-          "description": "Developed the app for a customer from scratch. The app is a rating tool for young footballers and their coaches",
+          "description": "Developed the app for a customer from scratch. The app is a rating tool for young footballers and their coaches. It includes a lot of functionality including detailed statistics and trophies.",
           "link": "http://bit.ly/android-rmg",
           "technologies": [
             1,
-            2,
-            3
+            3,
+            5,
+            6,
+            8,
+            16,
+            19
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/rmg/rmg%20(1).jpg?raw=true",
@@ -206,7 +234,7 @@
       "address": "Birmingham, UK",
       "dates": "05/2017 to 08/2018",
       "icon": "https://github.com/eirini91/CV/blob/master/docs/jobicons/castleton.png?raw=true",
-      "description": "The company focuses on software for Social Housing companies",
+      "description": "Formed by the acquisition of several leading technology providers to the social housing sector, Castleton has integrated its technologies to create a truly unrivalled suite of software, cloud and core services.",
       "responsibilities": [
         {
           "title": "Developing new apps",
@@ -228,8 +256,13 @@
           "link": null,
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            13,
+            16,
+            18,
+            21
           ],
           "screenshots": []
         },
@@ -238,9 +271,14 @@
           "description": "Developed an app which was dynamicly generated using a JSON. Including all activities, UI elements, Actions and Network calls",
           "link": null,
           "technologies": [
-            1,
             2,
-            3
+            3,
+            5,
+            8,
+            13,
+            16,
+            18,
+            21
           ],
           "screenshots": []
         },
@@ -250,8 +288,13 @@
           "link": null,
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            13,
+            18,
+            19,
+            21
           ],
           "screenshots": []
         },
@@ -261,8 +304,13 @@
           "link": null,
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            13,
+            18,
+            19,
+            21
           ],
           "screenshots": []
         }
@@ -274,7 +322,7 @@
       "address": "Birmingham, UK",
       "dates": "08/2015 to 05/2017",
       "icon": "https://github.com/eirini91/CV/blob/master/docs/jobicons/syncfirst.png?raw=true",
-      "description": "Mobile App Agency",
+      "description": "As one of the UK’s leading iOS & Android developers, they specialise in creating mobile applications that help you engage with your customers, increase internal productivity, promote new products and services, drive footfall to your business locations , create new revenue streams and ultimately increase your sales.",
       "responsibilities": [
         {
           "title": "Developing new apps",
@@ -288,23 +336,36 @@
       "examples": [
         {
           "title": "RAG Contacts",
-          "description": "Emergency Calling App",
-          "link": "https://play.google.com/store/apps/details?id=uk.co.ragcontacts.ragcontacts",
+          "description": "Emergency Calling App. The app allowed users to call or message their loved ones in emergencies while ovrriding the sound and notification settings on the device.",
+          "link": "https://www.facebook.com/ragcontacts",
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            17,
+            19,
+            21
           ],
-          "screenshots": []
+          "screenshots": [
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/rag/rag1.png?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/rag/rag2.png?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/rag/rag3.png?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/rag/rag4.png?raw=true"
+          ]
         },
         {
           "title": "NHS Walsall Diabetes",
           "description": "Diabetes informational App",
-          "link": "https://play.google.com/store/apps/details?id=uk.nhs.walsallhealthcare.walsalldiabetes.",
+          "link": "http://www.syncinteractive.co.uk/app-portfolio-nhs-healthcare-app/",
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            17,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/diabetes/1.jpg?raw=true",
@@ -320,12 +381,16 @@
         },
         {
           "title": "Activity Hunter",
-          "description": "UK Based app to find activies to do",
+          "description": "UK Based app to find activies to do. For this particlar app I created a Contentful API where admins could add companies and activities. ",
           "link": "https://play.google.com/store/apps/details?id=uk.co.activityhunter.activityhunter.",
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            17,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/activity/1.jpg?raw=true",
@@ -337,12 +402,16 @@
         },
         {
           "title": "Talking Motors",
-          "description": "Car selling app with an integrated chat system",
+          "description": "Car selling app with an integrated chat system. The app allows users to buy or sell vehicles. It also notifies users for any upcoming MOTs or Road Taxes. Users can also buy DVLA data for any particular vehicle. - Still In Productions (working on it as a freelancer)",
           "link": "https://play.google.com/store/apps/details?id=com.talkingmotorsapp.talkingmotors",
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            17,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/tm/tm%20(1).jpg?raw=true",
@@ -360,13 +429,17 @@
           ]
         },
         {
-          "title": "Stannah",
-          "description": "Car selling app with an integrated chat system",
+          "title": "Stannah Connect",
+          "description": "Stannah Stairlift System. Specially selected circle of family and friends can see when their loved one’s appliances are being used, and even check the temperature of the room",
           "link": "https://play.google.com/store/apps/details?id=com.talkingmotorsapp.talkingmotors",
           "technologies": [
             1,
-            2,
-            3
+            3,
+            4,
+            8,
+            17,
+            19,
+            21
           ],
           "screenshots": [
             "https://raw.githubusercontent.com/eirini91/CV/master/docs/screenshots/stannah/1.webp",
@@ -382,7 +455,7 @@
       "address": "Reditch, UK",
       "icon": "https://github.com/eirini91/CV/blob/master/docs/jobicons/gemporia.png?raw=true",
       "dates": "02/2014 to 08/2015",
-      "description": "Gemstone and jewellery selling TV channels",
+      "description": "Gemporia is a British television and online jewellery retailer. The main television channel operated by the business is Gems TV, a reverse auction jewellery shopping channel, the first dedicated reverse auction channel in the UK",
       "responsibilities": [
         {
           "title": "Developing new apps",
@@ -404,8 +477,9 @@
           "link": "https://play.google.com/store/apps/details?id=com.jewellerymaker&hl=en_GB",
           "technologies": [
             1,
-            2,
-            3
+            8,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/jm/1.jpg?raw=true",
@@ -421,8 +495,9 @@
           "link": "https://play.google.com/store/apps/details?id=uk.co.gemtv&hl=en_GB.",
           "technologies": [
             1,
-            2,
-            3
+            8,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/gemporia/1.jpg?raw=true",
@@ -435,8 +510,9 @@
           "link": "https://play.google.com/store/apps/details?id=com.gemporia.ringsizer&hl=en_GB.",
           "technologies": [
             1,
-            2,
-            3
+            8,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/sizer/1.jpg?raw=true",
@@ -461,8 +537,9 @@
           "link": "https://play.google.com/store/apps/details?id=com.televantou.ntou.",
           "technologies": [
             1,
-            2,
-            3
+            8,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/ntou/1.jpg?raw=true",
@@ -476,8 +553,9 @@
           "link": "https://play.google.com/store/apps/details?id=com.televantou.pantomima.",
           "technologies": [
             1,
-            2,
-            3
+            8,
+            19,
+            21
           ],
           "screenshots": []
         },
@@ -487,8 +565,10 @@
           "link": "https://play.google.com/store/apps/details?id=com.eirinitelevantou.drcy.",
           "technologies": [
             1,
-            2,
-            3
+            8,
+            4,
+            19,
+            21
           ],
           "screenshots": [
             "https://github.com/eirini91/CV/blob/master/docs/screenshots/dr/1.jpg?raw=true",
@@ -508,10 +588,20 @@
           "link": "https://play.google.com/store/apps/details?id=com.televantou.myapplication.",
           "technologies": [
             1,
-            2,
-            3
+            8,
+            19,
+            21
           ],
-          "screenshots": []
+          "screenshots": [
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/timer/timer%20(1).jpg?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/timer/timer%20(2).jpg?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/timer/timer%20(3).jpg?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/timer/timer%20(4).jpg?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/timer/timer%20(5).jpg?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/timer/timer%20(6).jpg?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/timer/timer%20(7).jpg?raw=true",
+            "https://github.com/eirini91/CV/blob/master/docs/screenshots/timer/timer%20(8).jpg?raw=true"
+          ]
         }
       ]
     }
